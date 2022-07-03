@@ -8,7 +8,7 @@ main {
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
-  --dark: #000000;
+  --dark: #021728;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -95,7 +95,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--light);
   text-decoration: none;
   font-weight: bold;
 }
@@ -110,6 +110,17 @@ header {
 
 header a {
   color: var(--light);
+}
+
+header .self {
+  text-align: left;
+}
+
+header img {
+  border-radius: 100%;
+  margin-right: 7px;
+  margin-top: 7px;
+
 }
 
 button {
@@ -163,7 +174,7 @@ li {
   list-style: none;
 }
 
-nav ul {
+Header.Navigation nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -171,13 +182,29 @@ nav ul {
   list-style: none;
   font-size: 15px;
 }
-nav a:hover {
+Header.Navigation nav a:hover {
   text-decoration: none;
 }
 
-nav li {
+Header.Navigation nav li {
   cursor: pointer;
 }
+
+/* Header.Navigation .feature-link {
+  position: relative;
+  display: inline-block;
+}
+
+Header.Navigation .feature-dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--dark);
+  z-index: 1;
+}
+
+Header.Navigation .feature-link:hover .feature-dropdown{
+  display: block;
+} */
 
 textarea {
 	width: 600px;

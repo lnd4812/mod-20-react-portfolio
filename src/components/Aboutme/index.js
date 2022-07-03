@@ -8,7 +8,7 @@ function Aboutme() {
             <img src={theme} className="my-2" style={{ width: "100%" }} alt="cover" />
             <div className="my-2 bio-blurb">
                 <p>
-                    I am a native of Cape Breton, Nova Scotia, having moved to Toronto not long after graduating from Dalhousie University with a B.Sc. in Mathematics.<br></br>The majority of my career has been in the insurance and reinsurance industry and, in the course of my current position, was introduced to coding by way of being assigned to manage the company's website.<br></br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
                 </p>
             </div>
         </section>
