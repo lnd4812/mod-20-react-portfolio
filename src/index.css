@@ -4,13 +4,13 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
+  --primary: #61cadf;
+  --secondary: #63c271;
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #021728;
   --darker: #111111;
-  --error: rgb(228, 46, 1);
+  --error: rgb(193, 8, 5);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -211,6 +211,10 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+.error-text {
+  color: var(--error);
 }
 
 .container {

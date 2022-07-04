@@ -1,41 +1,20 @@
-import React, {useState} from "react";
+import React, {useEffect} from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 // import Project from "../Project";
 
-function Navigation() {
+function Navigation(props) {
+    const {
+        features=[],
+        setCurrentFeature,
+        contactSelected,
+        currentFeature,
+        setContactSelected,
+    } = props;    
+        
     
-    const features =[
-        {
-            title: "feature1",
-            url: "url1",
-            repo: "github1",
-        },    
-        {
-            title: "feature2",
-            url: "url2",
-            repo: "github2",
-        },
-            {title: "feature3",
-            url: "url3",
-            repo: "github3",
-            },
-        {
-            title: "feature4",
-            url: "url4",
-            repo: "github4",
-        },
-        {
-            title: "feature5",
-            url: "url5",
-            repo: "github5",
-        },
-        {title: "feature6",
-            url: "url6",
-            repo: "github6",
-        },
-    ];
-    
-    const [ currentFeature, setCurrentFeature ] = useState(features[0]);
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentFeature.title);
+    }, [currentFeature]);
     
     return(    
         <nav>
@@ -43,23 +22,30 @@ function Navigation() {
                 <li className="mx-2">
                     <a href="#aboutme">About Me</a>
                 </li>
-                <li>
-                    <span>Contact</span>
+                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <span onClick={() => setContactSelected(true)}>Contact</span>
                 </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                {/* </li> */}
                 {/* <li className="mx-1"> */}
                     {/* <span className="feature-link">Featured Projects</span> 
                     <ul className="feature-dropdown">                    */}
                         {features.map((feature) => (
-                        <li className={`mx-1 ${currentFeature.title === feature.title && "navActive"}`} key={feature.title}>
+                        <li className={`mx-1 ${currentFeature.title === feature.title && !contactSelected && "navActive"}`} key={feature.title}>
                             <span onClick={() => {
-                               setCurrentFeature(feature)
+                               setCurrentFeature(feature);
+                               setContactSelected(false);
                             }}>
                                {capitalizeFirstLetter(feature.title)}
                             </span>
                         </li>
                         ))}
                     {/* </ul>                                 */}
-                {/* </li> */}
+                </li>
+                <li>
+                    <a href="/">Resume</a>
+                </li>
             </ul>
         </nav>
     );
