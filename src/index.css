@@ -106,14 +106,13 @@ a:hover {
 
 header {
   background: var(--dark);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 header a {
   color: var(--light);
-}
-
-header .self {
-  text-align: left;
 }
 
 header img {
@@ -174,20 +173,39 @@ li {
   list-style: none;
 }
 
-Header.Navigation nav ul {
+nav {
+  margin: 7px 0;
+}
+
+nav ul {
   display: flex;
   flex-wrap: wrap;
+  float: right;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   font-size: 15px;
+  width: 50%;
 }
-Header.Navigation nav a:hover {
+
+nav a:hover {
   text-decoration: none;
 }
 
-Header.Navigation nav li {
+nav li {
   cursor: pointer;
+  margin: 10px; 
+}
+
+nav h2 {
+  text-align: left;
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+nav .navrow {
+  display: inline;
 }
 
 /* Header.Navigation .feature-link {
@@ -288,11 +306,6 @@ textarea {
   margin-left: 5px;
 }
 
-.bio-blurb p {
-  text-align: left;
-  margin-left: 5px;
-}
-
 .card {
   width: 25%;
   text-align: center;
@@ -305,31 +318,6 @@ textarea {
   cursor: pointer;
 }
 
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
 
 button {
 	background: var(--primary);
