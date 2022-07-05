@@ -6,6 +6,13 @@ function ContactForm() {
     const [errorMessage, setErrorMessage] = useState("");
     const { name, email, message } = formState;
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+            console.log("Submit Form", formState);
+        }
+    };
+
     function handleChange(e) {
         if (e.target.name === "email") {
             const isValid = validateEmail(e.target.value);
@@ -15,19 +22,18 @@ function ContactForm() {
             } else {
                 setErrorMessage("");
             }
+        } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
+            } else {
+                setErrorMessage("");
+            }
         }
-        console.log("errorMessage", errorMessage);
         if (!errorMessage) {
-        setFormState({...formState, [e.target.name]: e.target.value})
-        }
+            setFormState({ ...formState, [e.target.name]: e.target.value});
+            console.log('Handle Form', formState);
     }
-    console.log(formState);
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
-
+}
     return (
         <section>
             <h1>Contact Me</h1>
@@ -53,7 +59,6 @@ function ContactForm() {
             </form>
         </section>
     )
-
 }
 
 export default ContactForm;

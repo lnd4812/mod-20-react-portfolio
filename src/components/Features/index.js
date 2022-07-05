@@ -1,40 +1,63 @@
-import React, {useState} from "react";
+import React, {useState} from 'react';
 
-const FeatureList = ({ feature }) => {
-    const [currentFeature, setCurrentFeature] = useState();
 
-    const [features] = useState([     
+const Features = ({ feature }) => {
+        const [currentFeature, setCurrentFeature] = useState();
+
+    const [featurePhotos] = useState([     
             {
-                title: "Food Finder Group Project 1",
+                name: "Food Finder Group Project 1",
                 url: "https://bootcampprojectoneteamfour.github.io/food-finder",
                 repo: "https://github/lnd4812/food-finder.git",
             },    
             {
-                title: "Weather Dashboard",
+                name: "Weather Dashboard",
                 url: "https://lnd4812.github.io/weather-dashboard/",
                 repo: "https://github.com/lnd4812/weather-dashboard",
             },
             {
-                title: "Note-Taker",
+                name: "Note-Taker",
                 url: "https://note-taker-at-work.herokuapp.com/",
                 repo: "https://github.com/lnd4812/note-taker/",
             },
             {
-                title: "Workday Scheduler",
+                name: "Workday Scheduler",
                 url: "url4",
                 repo: "https://github.com/lnd4812/workday-scheduler/",
             },
             {
-                title: "Team Profile Generator",
+                name: "Team Profile Generator",
                 url: "url5",
                 repo: "https://github.com/lnd4812/team-profile-generator/",
             },
             {
-                title: "Password Generator",
+                name: "Password Generator",
                 url: "url6",
                 repo: "https://github.com/lnd4812/password-generator",
             },
         ]);    
+
+        const currentFeaturePhotos = featurePhotos.filter(feature)
+
+        return(
+            <div>
+                <div className="flex-row">
+                    {currentFeaturePhotos.map((image, i) => (
+                        <img
+                            src={require(`../../assets/featurePhoto/${i}`).default}
+                            alt={image.name}
+                            className="img-thumbnail mx-1"
+                            key={image.name}
+                        />
+                    ))}
+                </div>
+            </div>
+        );
 }
 
-export default features;
+export default Features;
+
+
+
+
+
