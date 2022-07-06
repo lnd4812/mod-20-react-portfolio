@@ -20,12 +20,7 @@ function Navigation(props) {
     }, [currentFeature]);
     
     return(    
-        <nav className="flex-row nav-row">
-            <h2>
-                <a className="self" href="/">
-                    <span role="img" aria-label="self"><img src={self} className="bio-pic" style={{ width: "5%" }} alt="bio-pic" /></span>Laurel David Portfolio
-                </a>
-            </h2>
+        <nav className="flex-row">
             <ul className="flex-row">
                 <li className="mx-2">
                     <a href="#aboutme">About Me</a>
