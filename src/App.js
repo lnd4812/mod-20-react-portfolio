@@ -10,23 +10,23 @@ function App() {
   const [features] = useState([
     {
         name: "Food Finder Group Project 1",
-        url: "",
-        repo: "https://github.com/lnd4812/food-finder.git",
+        url: "https://bootcampprojectoneteamfour.github.io/food-finder",
+        repo: "https://github/lnd4812/food-finder.git",
     },    
     {
-        name: "Tech Blog application",
-        url: "https://lnd4812.github.io/weather-dashboard/",
-        repo: "https://github.com/lnd4812/weather-dashboard",
+        name: "Tech Blog",
+        url: "https://mod-14-tech-blog-challenge.jerokuapp.com/",
+        repo: "https://github.com/lnd4812/mod-14-tech-blog-challenge.git",
     },
     {
-        name: "NoSQL",
-        url: "",
-        repo: "https://github.com/lnd4812//",
+        name: "Budget App",
+        url: "https://polite-whistler-56063.herokuapp.com/",
+        repo: "https://github.com/lnd4812/mod-19-pwa-budget-app/",
     },
     {
-        name: "Team Profile Generator",
-        url: "url5",
-        repo: "https://github.com/lnd4812/team-profile-generator/",
+        name: "Workday Scheduler",
+        url: "https://lnd4812.github.io/workday-scheduler/",
+        repo: "https://github.com/lnd4812/workday-scheduler/",
     },
     {
         name: "Weather Dashboard",
@@ -35,7 +35,7 @@ function App() {
     },
     {   
         name: "Password Generator",
-        url: "url6",
+        url: "https://lnd4812.github.io/password-generator/",
         repo: "https://github.com/lnd4812/password-generator",
     },
 ]);

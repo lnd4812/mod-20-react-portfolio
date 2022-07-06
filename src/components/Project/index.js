@@ -2,8 +2,8 @@ import React from 'react';
 import Features from "../Features";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Project(props) {
-    const { currentFeature } = props;
+function Project(currentFeature) {
+    const { name, feature, url, repo, index } = currentFeature;
 
     return(
         <section>

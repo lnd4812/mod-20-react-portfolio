@@ -8,18 +8,13 @@ import them from "../../assets/main/theme.jpg";
 
 function Navigation(props) {
     const {
-        features = [Features[i]],
+        features = [],
         setCurrentFeature,
         contactSelected,
         currentFeature,
         setContactSelected,
     } = props;    
         
-    // const handleClick = (item) => {
-    //     console.log(item);
-    //     return item;
-    // };
-
     useEffect(() => {
         document.title = capitalizeFirstLetter(currentFeature.name);
     }, [currentFeature]);
