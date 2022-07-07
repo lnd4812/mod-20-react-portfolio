@@ -173,11 +173,11 @@ li {
   list-style: none;
 }
 
-nav {
+Header.Navigation nav {
   margin: 7px 0;
 }
 
-nav ul {
+Header.Navigation nav ul {
   display: flex;
   flex-wrap: wrap;
   float: right;
@@ -188,7 +188,7 @@ nav ul {
   width: 50%;
 }
 
-nav a:hover {
+Header.Navigation nav a:hover {
   text-decoration: none;
 }
 

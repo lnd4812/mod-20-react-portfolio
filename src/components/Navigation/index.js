@@ -1,10 +1,9 @@
 import React, {useEffect} from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 import "../../index.css"
-import Project from "../Project";
-import ContactForm from '../ContactForm';
-import self from "../../assets/for-header/LND2021.png"
-import them from "../../assets/main/theme.jpg";
+// import Project from "../Project";
+// import ContactForm from '../ContactForm';
+// import them from "../../assets/main/theme.jpg";
 
 function Navigation(props) {
     const {
@@ -15,15 +14,15 @@ function Navigation(props) {
         setContactSelected,
     } = props;    
         
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentFeature.name);
-    }, [currentFeature]);
+    // useEffect(() => {
+    //     document.title = (currentFeature.name);
+    // }, [currentFeature]);
     
     return(    
         <nav className="flex-row">
             <ul className="flex-row">
                 <li className="mx-2">
-                    <a href="#aboutme">About Me</a>
+                    <a href="#aboutme" onClick={() => setContactSelected(false)}>About Me</a>
                 </li>
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
@@ -39,7 +38,7 @@ function Navigation(props) {
                                             setCurrentFeature(feature);
                                             setContactSelected(false);
                                          }}>
-                                        {capitalizeFirstLetter(feature.name)}
+                                        {(feature.name)}
                                         </span>
                                     </li>
                                 ))}
