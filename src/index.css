@@ -106,6 +106,9 @@ a:hover {
 
 header {
   background: var(--dark);
+  padding-top: 15px;
+  padding-right: 100px;
+  padding-left: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -173,10 +176,6 @@ li {
   list-style: none;
 }
 
-Header.Navigation nav {
-  margin: 7px 0;
-}
-
 Header.Navigation nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -192,23 +191,24 @@ Header.Navigation nav a:hover {
   text-decoration: none;
 }
 
-nav li {
+Header.Navigation nav li {
   cursor: pointer;
   margin: 10px; 
 }
 
-nav h2 {
+Header.Navigation nav h2 {
   text-align: left;
   width: 40%;
   margin-top: 20px;
   margin-left: 10px;
 }
 
-nav .navrow {
-  display: inline;
+Header.Navigation .navlinks {
+  display: flex;
+  justify-content: space between;
 }
 
-/* Header.Navigation .feature-link {
+Header.Navigation .feature-link {
   position: relative;
   display: inline-block;
 }
@@ -222,13 +222,22 @@ Header.Navigation .feature-dropdown {
 
 Header.Navigation .feature-link:hover .feature-dropdown{
   display: block;
-} */
+} 
 
 textarea {
 	width: 600px;
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-right: 275px;
+  padding-left: 275px;
+
 }
 
 .error-text {
@@ -337,11 +346,10 @@ a {
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
-	margin-right: -2px;
-	
+	margin-right: -2px;	
 }
 
 .navActive {
   color: var(--secondary);
-}
+} 
 

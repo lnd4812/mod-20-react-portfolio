@@ -6,8 +6,8 @@ function Project(props) {
     const { currentFeature } = props;
 
     return(
-        <section>
-            <h1>{(currentFeature.name)}</h1>
+        <section className="feature-ident">
+            <h3>{(currentFeature.name)}</h3>
             <p>{currentFeature.url}</p>
             <p>{currentFeature.repo}</p>
             <Features feature={currentFeature.name}/>

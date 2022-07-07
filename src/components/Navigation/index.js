@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 import "../../index.css"
-// import Project from "../Project";
-// import ContactForm from '../ContactForm';
-// import them from "../../assets/main/theme.jpg";
+import Project from "../Project";
+import ContactForm from '../ContactForm';
+import them from "../../assets/main/theme.jpg";
 
 function Navigation(props) {
     const {
@@ -19,10 +19,10 @@ function Navigation(props) {
     // }, [currentFeature]);
     
     return(    
-        <nav className="flex-row">
-            <ul className="flex-row">
+        <nav>
+            <ul className="flex-row navlinks">
                 <li className="mx-2">
-                    <a href="#aboutme" onClick={() => setContactSelected(false)}>About Me</a>
+                   <a href="#aboutme" onClick={() => setContactSelected(false)}>About Me</a>
                 </li>
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
@@ -46,7 +46,7 @@ function Navigation(props) {
                         </div>
                     </li>                                                
                 <li>
-                    <a href="#resume">Resume</a>
+                    <a href="../../assets/Laurel David.docx">Resume</a>
                 </li>
             </ul>
         </nav>
