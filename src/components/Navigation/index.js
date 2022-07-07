@@ -1,22 +1,19 @@
 import React, {useEffect} from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
 import "../../index.css"
-import Project from "../Project";
-import ContactForm from '../ContactForm';
-import them from "../../assets/main/theme.jpg";
+import ContactForm from "../ContactForm";
 
 function Navigation(props) {
     const {
-        features = [],
-        setCurrentFeature,
+        subjects = [],
+        setCurrentSubject,
         contactSelected,
-        currentFeature,
+        currentSubject,
         setContactSelected,
     } = props;    
         
     // useEffect(() => {
-    //     document.title = (currentFeature.name);
-    // }, [currentFeature]);
+    //     document.title = (currentSubject.name);
+    // }, [currentSubject]);
     
     return(    
         <nav>
@@ -29,16 +26,16 @@ function Navigation(props) {
                 </li>
                 <li>
                     <a href="#portfolio">Portfolio</a>
-                        <div className="feature-dropdown">
-                            <div className="feature-link">
-                                {features.map((feature) => (
+                        <div className="subject-dropdown">
+                            <div className="subject-link">
+                                {subjects.map((subject) => (
                                     <li className=
-                                    {`mx-1 ${currentFeature.name === feature.name && !contactSelected && "navActive"}`} key={feature.name}>
+                                    {`mx-1 ${currentSubject.name === subject.name && !contactSelected && "navActive"}`} key={subject.name}>
                                         <span onClick={() => {
-                                            setCurrentFeature(feature);
+                                            setCurrentSubject(subject);
                                             setContactSelected(false);
                                          }}>
-                                        {(feature.name)}
+                                        {(subject.name)}
                                         </span>
                                     </li>
                                 ))}

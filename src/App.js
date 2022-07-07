@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import './App.css';
 
 function App() {
-  const [features] = useState([
+  const [subjects] = useState([
     {
         name: "Food Finder Group Project 1",
         // url: "https://bootcampprojectoneteamfour.github.io/food-finder",
@@ -40,22 +40,22 @@ function App() {
     },
 ]);
   
-const [currentFeature, setCurrentFeature] = useState(features[0]);
+const [currentSubject, setCurrentSubject] = useState(subjects[0]);
 const { contactSelected, setContactSelected } = useState(false);
 
   return (
     <div className="App">
       <Header
-        features={features}
-        setCurrentFeature={setCurrentFeature}
-        currentFeature={currentFeature}
+        subjects={subjects}
+        setCurrentSubject={setCurrentSubject}
+        currentSubject={currentSubject}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}>
       </Header>     
       <main>
         {!contactSelected ? (
           <>
-          <Project currentFeature={currentFeature}></Project>
+          <Project currentSubject={currentSubject}></Project>
           <Aboutme></Aboutme>
          </>
         ) : (

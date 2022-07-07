@@ -1,61 +1,62 @@
 import React, {useState} from 'react';
 
-const Features = ({ feature }) => {
-    const [featureImages] = useState([     
+const SubjectListing = ({ subject }) => {
+    const [subjectImages] = useState([     
         {
             name: "Food Finder Group Project 1",
-            feature: "project-1",
+            subject: "project-1",
             url: "https://bootcampprojectoneteamfour.github.io/food-finder",
             repo: "https://github/lnd4812/food-finder.git",
         },    
         {
             name: "Tech Blog",
-            feature: "mvc",
+            subject: "mvc",
             url: "https://mod-14-tech-blog-challenge.jerokuapp.com/",
             repo: "https://github.com/lnd4812/mod-14-tech-blog-challenge.git",
         },
         {
             name: "Budget App",
-            feature: "pwa",
+            subject: "pwa",
             url: "https://polite-whistler-56063.herokuapp.com/",
             repo: "https://github.com/lnd4812/mod-19-pwa-budget-app/",
         },
         {
             name: "Workday Scheduler",
-            feature: "3rd-party-apis",
+            subject: "3rd-party-apis",
             url: "https://lnd4812.github.io/workday-scheduler/",
             repo: "https://github.com/lnd4812/workday-scheduler/",
         },
         {
             name: "Weather Dashboard",
-            feature: "server-side-apis",
+            subject: "server-side-apis",
             url: "https://lnd4812.github.io/weather-dashboard/",
             repo: "https://github.com/lnd4812/weather-dashboard/",
         },
         {
             name: "Password Generator",
-            feature: "javascript",
+            subject: "javascript",
             url: "https://lnd4812.github.io/password-generator/",
             repo: "https://github.com/lnd4812/password-generator",
         },
     ]);    
 
-    const currentFeatures = featureImages.filter(featureImage => featureImage.feature === feature);
+    const currentSubjects = subjectImages.filter(subjectImage => subjectImage.subject === subject);
 
     return (
         <div className="flex-row">
-            {currentFeatures.map((image, i) => (
-                <img src={require(`../../assets/featureImage/${feature}/${i}.png`).default}
+        {currentSubjects.map((image) => (
+                <img src={require(`../../assets/subjectImage/${subject}/0.png`).default}
                     alt={image.name}
                     className="img-thumbnail mx-1"
                     key={image.name}
                 />
-            ))}
+              ))}
         </div>
+        
     );
 }
 
-export default Features;
+export default SubjectListing;
 
 
 

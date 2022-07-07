@@ -208,19 +208,19 @@ Header.Navigation .navlinks {
   justify-content: space between;
 }
 
-Header.Navigation .feature-link {
+Header.Navigation .subject-link {
   position: relative;
   display: inline-block;
 }
 
-Header.Navigation .feature-dropdown {
+Header.Navigation .subject-dropdown {
   display: none;
   position: absolute;
   background-color: var(--dark);
   z-index: 1;
 }
 
-Header.Navigation .feature-link:hover .feature-dropdown{
+Header.Navigation .subject-link:hover .subject-dropdown{
   display: block;
 } 
 
@@ -229,6 +229,12 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+.subject-ident {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
 }
 
 .social-links {

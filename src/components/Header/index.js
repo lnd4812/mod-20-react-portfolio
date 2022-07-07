@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import Navigation from "../Navigation";
-import Project from "../Project";
 import "../../index.css"
-// import ContactForm from '../ContactForm';
 import self from "../../assets/for-header/LND2021.png"
 
 function Header() {
