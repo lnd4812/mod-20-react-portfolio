@@ -231,12 +231,6 @@ textarea {
 	padding: 5px;
 }
 
-.subject-ident {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-}
-
 .social-links {
   display: flex;
   justify-content: space-between;
