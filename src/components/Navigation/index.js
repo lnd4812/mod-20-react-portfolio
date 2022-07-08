@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useState} from "react";
 import "../../index.css"
 import ContactForm from "../ContactForm";
 
@@ -15,38 +15,38 @@ function Navigation(props) {
     //     document.title = (currentSubject.name);
     // }, [currentSubject]);
     
-    const subjects = [
+    const [subjects] = useState([
         {
             name: "Food Finder Group Project 1",
-            url: "",
-            github: "",
+            url: "https://bootcampprojectoneteamfour.github.io/food-finder",
+            repo: "https://github/lnd4812/food-finder.git",
         },
         {
             name: "Tech Blog",
-            url: "",
-            github: "", 
+            url: "https://mod-14-tech-blog-challenge.jerokuapp.com/",
+            repo: "https://github.com/lnd4812/mod-14-tech-blog-challenge.git", 
         },
         {
             name: "Budget App",
-            url: "",
-            github:"",
+            url: "https://polite-whistler-56063.herokuapp.com/",
+            repo: "https://github.com/lnd4812/mod-19-pwa-budget-app/",
         },
         {
             name: "Workday Scheduler",
-            url: "",
-            github: "",
+            url: "https://lnd4812.github.io/workday-scheduler/",
+            repo: "https://github.com/lnd4812/workday-scheduler/",
         },
         {
             name: "Weather Dashboard",
-            url: "",
-            github: "",
+            url: "https://lnd4812.github.io/weather-dashboard/",
+            repo: "https://github.com/lnd4812/weather-dashboard/",
         },
         {
             name: "Password Generator",
-            url: "",
-            github:"",
+            url: "https://lnd4812.github.io/password-generator/",
+            repo: "https://github.com/lnd4812/password-generator",
         }
-    ]
+    ]);
 
     function subjectSelected() {
         console.log(`${name} clicked`)
@@ -69,29 +69,26 @@ function Navigation(props) {
                     >Contact</span>
                 </li>
                 <li>
-                    <a href="#portfolio">Portfolio</a>
-                        {/* <div className="subject-dropdown">
-                            <div className="subject-link"> */}
-                                {subjects.map((subject) => ( 
-                                    <li className="mx-1" key={subject.name}
-                                    // {`mx-1 ${currentSubject.name === subject.name && !contactSelected && "navActive"}`} key={subject.name}
-                                    >
-                                        <span
-                                        onClick={() => subjectSelected(subject.name)}
+                    <a href="#portfolio" className="mx-2">Portfolio</a>
+                        {subjects.map((subject) => ( 
+                            <li className="mx-1" key={subject.name}
+                            // {`mx-1 ${currentSubject.name === subject.name && !contactSelected && "navActive"}`} key={subject.name}
+                            >
+                                <span
+                                onClick={() => subjectSelected(subject.name)}
 
-                                        //     setCurrentSubject(subject);
-                                        //     setContactSelected(false);
-                                        // }}
-                                         >
-                                        {(subject.name)}
-                                        </span> 
-                                    </li>
-                                ))}
-                            {/* </div>
-                        </div> */}
+                                //     setCurrentSubject(subject);
+                                //     setContactSelected(false);
+                                // }}
+                                    >
+                                {(subject.name)}
+                                </span> 
+                            </li>
+                        ))}
+                    
                     </li>                                                
                 <li>
-                    <a href="../../assets/Laurel David.docx">Resume</a>
+                    <a href="../../assets/Laurel David.docx" className="mx-2">Resume</a>
                 </li>
             </ul>
         </nav>
