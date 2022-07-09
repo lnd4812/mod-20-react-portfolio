@@ -31,9 +31,9 @@ function Navigation(props) {
                 className="mx-2"
                 // {`mx-2 ${contactSelected && 'navActive'}`}
                 >
-                    <span 
+                   <a href="#contact"><span 
                     // onClick={() => setContactSelected(true)}
-                    >Contact</span>
+                    >Contact</span></a>
                 </li>
                 <li className='mx-2'>
                     <a href="#portfolio">Portfolio</a>

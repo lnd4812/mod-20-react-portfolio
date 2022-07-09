@@ -14,26 +14,12 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 html,
 body {
@@ -102,6 +88,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: var(--primary);
 }
 
 header {
@@ -181,7 +168,7 @@ li {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--primary);
 } 
 
 Header.Navigation nav ul {
@@ -195,8 +182,8 @@ Header.Navigation nav ul {
   width: 50%;
 }
 
-Header.Navigation nav a:hover {
-  text-decoration: none;
+Header.Navigation .navlinks a:hover {
+  color: var(--primary);
 }
 
 Header.Navigation nav li {
@@ -208,7 +195,7 @@ Header.Navigation nav h2 {
   text-align: left;
   width: 40%;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 10px; 
 }
 
 Header.Navigation .navlinks {
@@ -241,11 +228,9 @@ hr {
 .resume-info {
   padding-top: 25px;
   text-align: left;
+  
 }
 
-.resume-info p {
-  line-height: .5;
-}
 
 .social-links {
   display: flex;
@@ -324,7 +309,6 @@ hr {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
-
 
 .card {
   width: 25%;

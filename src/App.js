@@ -7,27 +7,20 @@ import Resume from "./components/Resume"
 import Footer from "./components/Footer";
 import './App.css';
 
-function App(props) {
- const { currentSubject } = props;
-      
+function App() {
+    
 
 // const { contactSelected, setContactSelected } = useState(false);
 
   return (
     <div className="App">
-      <Header
-        // subjects={subjects}
-        // setCurrentSubject={setCurrentSubject}
-        // currentSubject={currentSubject}
-        // contactSelected={contactSelected}
-        // setContactSelected={setContactSelected}
-        >
+      <Header>
       </Header>     
       <main>
         {/* {!contactSelected ? (
           <> */}
-          <Portfolio currentSubject={currentSubject}></Portfolio>
           <Aboutme></Aboutme>
+          <Portfolio></Portfolio>
          {/* </>
         ) : ( */}
           <ContactForm></ContactForm>
