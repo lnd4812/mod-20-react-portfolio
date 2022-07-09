@@ -3,7 +3,7 @@ import "../../index.css"
 
 function Footer() {
     return(
-        <footer id="social">
+        <footer id="footer">
             <div className="social-links">
                 <a href="https://github.com/lnd4812">GitHub</a>
                 <a href="https://www.linkedin.com/in/laurel-david-99122574/">LinkedIn</a>

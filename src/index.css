@@ -6,11 +6,11 @@ main {
 :root {
   --primary: #61cadf;
   --secondary: #9ee8a9;
-  --tertiary: #B12704;
+  --tertiary: #f09cb6e9;
   --light: #fafafa;
   --dark: #021728;
   --darker: #111111;
-  --error: rgb(193, 8, 5);
+  --error: #B12704;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -114,6 +114,10 @@ header img {
 footer {
   border-top: 1px solid var(--light);
   padding-top: 35px;
+}
+
+footer a {
+  color: var(--light);
 }
 
 button {
@@ -229,12 +233,14 @@ hr {
   color: var(--light);
 }
 
+.resume-top a:hover {
+  color: var(--primary);
+}
+
 .resume-info {
   padding-top: 25px;
   text-align: left;
-  
 }
-
 
 .social-links {
   display: flex;
@@ -245,7 +251,7 @@ hr {
 
 }
 
-.error-text {
+.error-message {
   color: var(--error);
 }
 

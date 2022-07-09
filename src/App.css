@@ -27,12 +27,8 @@
   line-height: .5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .App-footer {
-  background-color: #282c34;
+  background-color: #021728;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
