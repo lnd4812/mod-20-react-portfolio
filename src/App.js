@@ -10,21 +10,20 @@ import './App.css';
 function App() {
     
 
-// const { contactSelected, setContactSelected } = useState(false);
+const { contactSelected, setContactSelected } = useState(false);
 
   return (
     <div className="App">
       <Header>
       </Header>     
       <main>
-        {/* {!contactSelected ? (
-          <> */}
+       
           <Aboutme></Aboutme>
           <Portfolio></Portfolio>
-         {/* </>
-        ) : ( */}
+         
+     
           <ContactForm></ContactForm>
-        {/* )} */}
+     
         <Resume></Resume>
       </main>
       <Footer></Footer>

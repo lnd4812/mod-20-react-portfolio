@@ -225,6 +225,10 @@ hr {
   margin-bottom: 25px;
 }
 
+.resume-top a {
+  color: var(--light);
+}
+
 .resume-info {
   padding-top: 25px;
   text-align: left;

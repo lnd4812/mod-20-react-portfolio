@@ -40,30 +40,28 @@ function Portfolio() {
         },
     ]);    
     
-    // // const [featuresDisplay, setFeaturesDisplay] = useState(featureList[0]);
-    // const { name, feature, url, repo } = featuresDisplay;
-    // featuresDisplay = featureList.filter(featureList => featureList.feature === feature);
-    
-  
-        return (null);
-    //       <section className="display">
-    //         <div>
-    //             <div className="flex-row">
-    //                {featuresDisplay.map((image, name, feature, url, repo) => (
-                    
-    //                 <img
-    //                     src={require(`../../assets/featureImages/${feature}.png`).default}
-    //                     alt={image.name}
-    //                     className="img-thumbnail mx-1"
-    //                     key={image.name}
-    //                    />
-                       
-    //                 ))}   
-    //             </div>
-    //         </div>
-    //       </section>
+   const { name, feature, url, repo } = featureList;
       
-    //     )
+        return (
+          
+          <section id="portfolio" className="display">
+            <div>
+                <div className="flex-row">
+                   {featureList.map((image, feature) => (
+                    
+                    <img
+                        src={require(`../../assets/featureImages/password-generator.png`).default}
+                        alt={image.name}
+                        className="img-thumbnail mx-1"
+                        key={image.name}
+                       />
+                       
+                    ))}   
+                </div>
+            </div>
+          </section>
+      
+        )
      }
 
 export default Portfolio;

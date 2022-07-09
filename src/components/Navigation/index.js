@@ -13,11 +13,7 @@ function Navigation(props) {
     
    
 
-    // function subjectSelected() {
-    //     console.log(`${name} clicked`)
-    // }
-
-    return(    
+        return(    
         <nav>
             <ul className="flex-row navlinks">
                 <li className="mx-2">
