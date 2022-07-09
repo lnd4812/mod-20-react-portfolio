@@ -15,15 +15,16 @@ const { contactSelected, setContactSelected } = useState(false);
       <Header>
       </Header>     
       <main>
-       
+       {!contactSelected ? (
+        <>
           <Aboutme></Aboutme>
           <Portfolio></Portfolio>
-         
-     
+          <Resume></Resume>
+        </>
+       ):(
           <ContactForm></ContactForm>
-     
-        <Resume></Resume>
-      </main>
+       )}
+       </main>
       <Footer></Footer>
     </div>
   );

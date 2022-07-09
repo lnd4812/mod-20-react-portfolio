@@ -175,6 +175,10 @@ li {
   color: var(--primary);
 } 
 
+.contact-click:hover {
+  color: var(--primary);
+}
+
 Header.Navigation nav ul {
   display: flex;
   flex-wrap: wrap;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-function Portfolio() {
-    const [featureList] = useState([     
+function Portfolio({feature}) {
+    const [featurePhotos] = useState([     
         {
             name: "Food Finder Group Project 1",
             feature: "food-finder-group-project-1",
@@ -40,23 +40,25 @@ function Portfolio() {
         },
     ]);    
     
-   const { name, feature, url, repo } = featureList;
-      
+    const featureDisplay = featurePhotos.filter(featurePhoto => featurePhoto.feature === feature);  
+
         return (
-          
-          <section id="portfolio" className="display">
+        <section id="portfolio" className="display">
             <div>
                 <div className="flex-row">
-                   {featureList.map((image, feature) => (
-                    
+                  {featureDisplay.map((name, feature, url, repo, image) => (
+                    <>  
+                    <h1>{name}</h1>
+                    <p>{url}</p>
+                    <p>{repo}</p>
                     <img
-                        src={require(`../../assets/featureImages/password-generator.png`).default}
+                        src={require(`../../assets/featureImages/${feature}.png`).default}
                         alt={image.name}
                         className="img-thumbnail mx-1"
                         key={image.name}
                        />
-                       
-                    ))}   
+                   </>   
+                    ))} 
                 </div>
             </div>
           </section>
