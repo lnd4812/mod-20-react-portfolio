@@ -4,7 +4,7 @@ import theme from "../../assets/main/theme.jpg";
 function Aboutme() {
     return(
         <section className="my-5">
-            <h1 id="about">About Me</h1>
+            <h1 id="aboutme">About Me</h1>
             <img src={theme} className="my-2" style={{ width: "100%" , opacity: .9}} alt="cover" />
             <div className="my-2 bio-blurb">
                 <p>
