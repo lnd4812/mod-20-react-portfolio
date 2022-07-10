@@ -4,8 +4,8 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #61cadf;
-  --secondary: #9ee8a9;
+  --primary: rgb(187, 216, 228);
+  --secondary: rgb(159, 216, 243);
   --tertiary: #f09cb6e9;
   --light: #fafafa;
   --dark: #021728;
@@ -171,10 +171,6 @@ li {
   list-style: none;
 }
 
-.navActive {
-  color: var(--primary);
-} 
-
 .contact-click:hover {
   color: var(--primary);
 }
@@ -252,11 +248,23 @@ hr {
   padding-bottom: 25px;
   padding-right: 275px;
   padding-left: 275px;
-
 }
 
 .error-message {
   color: var(--error);
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display p {
+  font-weight: 100;
+}
+
+.project-title {
+  color: var(--secondary);
 }
 
 .container {

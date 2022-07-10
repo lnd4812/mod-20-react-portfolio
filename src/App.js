@@ -17,6 +17,7 @@ const { contactSelected, setContactSelected } = useState(false);
         setContactSelected={setContactSelected}>
       </Header>     
       <main>
+      {/* Create a switch case using pageSelected state */}
        {!contactSelected ? (
         <>
           <Aboutme></Aboutme>
