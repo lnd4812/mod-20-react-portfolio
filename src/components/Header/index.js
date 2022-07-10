@@ -13,7 +13,7 @@ function Header() {
                     <span role="img" aria-label="self"><img src={self} className="bio-pic" style={{ width: "5%" }} alt="bio-pic" /></span>Laurel David Portfolio
                 </a>
             </h2>
-            {/* Pass header props down to naviagtion componenet*/}
+            {/* Pass header props down to navigation component*/}
             <Navigation 
                
             >   

@@ -244,6 +244,7 @@ hr {
 .resume-info {
   padding-top: 25px;
   padding-bottom: 10px;
+  margin-bottom: 25px;
   text-align: left;
   color: var(--primary);
   border-bottom: 1px solid var(--primary);
@@ -264,16 +265,17 @@ hr {
 .project-image {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: left;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .display {
   border-bottom: solid 1px var(--light);
+  margin-bottom: 25px;
 }
 
 .display h3 {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .display p {
