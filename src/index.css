@@ -221,7 +221,7 @@ textarea {
   margin-left: 5px;
  }
 
- .bio {
+.bio {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--light);
  }
@@ -232,9 +232,12 @@ hr {
 
 .resume-top {
   text-align: center;
+  padding-top: 20px;
   padding-bottom: 10px;
+  margin-top:25px;
   margin-bottom: 25px;
   color: var(--primary);
+  border-top: 1px solid var(--primary);
 }
 
 .resume-top a:hover {
@@ -265,13 +268,11 @@ hr {
 .project-image {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-}
+  justify-content: space-between;
+ }
 
 .display {
-  border-bottom: solid 1px var(--primary);
-  margin-bottom: 25px;
+ margin-bottom: 25px;
 }
 
 .display h3 {
@@ -281,6 +282,7 @@ hr {
 
 .display p {
   font-weight: 100;
+  line-height: 75%;
 }
 
 .container {

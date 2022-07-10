@@ -8,16 +8,17 @@ import Footer from "./components/Footer";
 import './App.css';
 
 function App() {
+
+    
   return (
     <div className="App">
       <Header>
       </Header>     
       <main>
-      
-          <Aboutme></Aboutme>
-          <Portfolio></Portfolio>
-          <Resume></Resume>
-          <ContactForm></ContactForm>
+        <Aboutme></Aboutme>
+        <Portfolio></Portfolio>
+        <Resume></Resume>
+        <ContactForm></ContactForm>
       
        </main>
       <Footer></Footer>
