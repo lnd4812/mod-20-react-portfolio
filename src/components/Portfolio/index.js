@@ -7,7 +7,7 @@ function Portfolio(props) {
       name: "Food Finder Group Project 1",
       feature: "food-finder-group-project-1",
       url: <a href="https://bootcampprojectoneteamfour.github.io/food-finder">https://bootcampprojectoneteamfour.github.io/food-finder</a>,
-      repo: <a href="https://github/lnd4812/food-finder.git">https://github/lnd4812/food-finder.git</a>,
+      repo: <a href="https://github.com/bootcampProjectOneTeamFour/food-finder">https://github.com/bootcampProjectOneTeamFour/food-finder</a>,
     },
     {
       name: "Tech Blog",

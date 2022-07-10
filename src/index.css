@@ -270,12 +270,13 @@ hr {
 }
 
 .display {
-  border-bottom: solid 1px var(--light);
+  border-bottom: solid 1px var(--primary);
   margin-bottom: 25px;
 }
 
 .display h3 {
   color: var(--primary);
+  font-weight: bold;
 }
 
 .display p {
