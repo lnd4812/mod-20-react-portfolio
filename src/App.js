@@ -8,25 +8,17 @@ import Footer from "./components/Footer";
 import './App.css';
 
 function App() {
-const { contactSelected, setContactSelected } = useState(false);
-
   return (
     <div className="App">
-      <Header
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}>
+      <Header>
       </Header>     
       <main>
-      {/* Create a switch case using pageSelected state */}
-       {!contactSelected ? (
-        <>
+      
           <Aboutme></Aboutme>
           <Portfolio></Portfolio>
           <Resume></Resume>
-        </>
-       ):(
           <ContactForm></ContactForm>
-       )}
+      
        </main>
       <Footer></Footer>
     </div>

@@ -95,10 +95,12 @@ header {
   background: var(--dark);
   padding-top: 15px;
   padding-right: 100px;
+  padding-bottom: 10px;
   padding-left: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px solid var(--light);
 }
 
 header a {
@@ -129,7 +131,7 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 button:hover {
@@ -214,10 +216,15 @@ textarea {
 	padding: 5px;
 }
 
-#about {
+#aboutme {
   float: left;
   margin-left: 5px;
-}
+ }
+
+ .bio {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light);
+ }
 
 hr {
   opacity: .5;
@@ -227,19 +234,19 @@ hr {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 25px;
-}
-
-.resume-top a {
-  color: var(--light);
+  color: var(--primary);
 }
 
 .resume-top a:hover {
-  color: var(--primary);
+  color: var(--light);
 }
 
 .resume-info {
   padding-top: 25px;
+  padding-bottom: 10px;
   text-align: left;
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 
 .social-links {
@@ -254,17 +261,23 @@ hr {
   color: var(--error);
 }
 
-.display {
+.project-image {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.display {
+  border-bottom: solid 1px var(--light);
+}
+
+.display h3 {
+  color: var(--secondary);
 }
 
 .display p {
   font-weight: 100;
-}
-
-.project-title {
-  color: var(--secondary);
 }
 
 .container {
