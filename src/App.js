@@ -12,7 +12,9 @@ const { contactSelected, setContactSelected } = useState(false);
 
   return (
     <div className="App">
-      <Header>
+      <Header
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}>
       </Header>     
       <main>
        {!contactSelected ? (
