@@ -4,11 +4,11 @@
 
 # Title
 
-REACT PORTFOLIO
+MY PORTFOLIO REACT APPLICATION
 
 ## Description
 
-Use .
+A Single Page Application (SPA) React portfolio of work samples that may be presented to prospective employers in their assessment of me as a potential candidate for employment.
 
 Output is based on the acceptance criteria outlined in the Module 20 Assignment Overview [Module-20-assignment](https://courses.bootcampspot.com/courses/1181/assignments/23390?module_item_id=466715).
 
@@ -27,11 +27,29 @@ A sample display of expected output is included in the Challenge outline.
 
 ## Installation
 
-The process is initiated by running npm run start in the CLI to .  
+The React App is initiated by running "npm create-react-app"in the CLI and, once the sufficient coding has been added, may be deployed by typing "npm run start" in the CLI.  A webpage is then launched at "localhost:3000".
 
 ## Usage
 
-Display projects and assignments in a Single Page App for job search...
+This application enables the user to develop a platform in which that user's web development projects and related works may be presented to prospective employers in their consideration of that user for a potential job position.  The portfolio also features sections in which the user may add personal or other information that may be useful to share with prospective employers when seeking a position.
+
+The main sections of the application are:
+
+* About Me - a short bio about the owner of the portfolio.
+  
+  ![Screen shot of the About Me component page](src/assets/screenshots/header-aboutme.png).
+
+* Portfolio - Images highlighting the applications featured in the portfolio along with links to their deployed URL (Heroku or GitHub) as well as their respective GitHub links.
+  
+  ![Screen shot of the Portfolio component page](src/assets/screenshots/portfolio.png).
+
+* Resume - a resume summarizing the portfolio owner's work experience, education, skills and activities which may be useful in the search for employment.  The Resume also includes a link to a PDF version which may be opened and downloaded.
+
+  ![Screen shot of the Resume component page](src/assets/screenshots/resume.png)  
+
+* Contact Form that may be used to contact the portfolio owner.  Below that is the Footer which includes links to the portfolio owner's LinkedIn account, GitHub account and facebook (Meta) account (although this portfolio owner does not use this account very often!).
+  
+  ![Screen shot of Contact and Footer components](src/assets/screenshots/contactme-footer.png).
 
 ## License
 
