@@ -79,6 +79,8 @@ My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 
 My GitHub repository link for this project is [github.com/lnd4812/mod-20-react-portfolio](https://github.com/lnd4812/mod-20-react-portfolio)
 
+Deployment URL for application is [lnd4812.github.io/mod-20-react-portfoio](https://lnd4812.github.io/mod-20-react-portfolio/).
+
 ## Contact information
 
 To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:laureldavid64@gmail.com">laureldavid64@gmail.com</a>
