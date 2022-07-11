@@ -1,10 +1,10 @@
 import React from "react";
 import "../../index.css"
 
-function Navigation() {
+function Navigation(props) {
 
     const handleClick = (item) => {
-        return item;
+        return props.item;
     }
             
        return(    
@@ -17,10 +17,10 @@ function Navigation() {
                     <a href="#portfolio" onClick={() => handleClick('Portfolio')}>Portfolio</a>
                 </li>  
                 <li className="mx-2">
-                   <span onClick={() => handleClick('Contact')}>Contact</span>
+                   <span onClick={() => handleClick('ContactForm')}>Contact</span>
                 </li>
                 <li className='mx-2'>
-                    <a href="#resume"onClick={() => handleClick('Resume')}>Resume</a>
+                    <a href="#resume" onClick={() => handleClick('Resume')}>Resume</a>
                 </li>
             </ul>
         </nav>

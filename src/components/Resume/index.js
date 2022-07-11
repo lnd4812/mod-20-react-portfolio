@@ -1,7 +1,9 @@
 import React from 'react';
 import '../../index.css';
+import resumepdf from "../../assets/resumepdf.pdf"
 
 function Resume() {
+
     return (
     <section id="resume">
         <div className="resume-top">
@@ -50,6 +52,10 @@ function Resume() {
                 <h4>ACTIVITIES</h4>
                   <br></br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie</p>
+            </div>
+            <br></br>
+            <div>
+              <p>Click <span ><a href={resumepdf}>HERE</a></span> to access a downloadable PDF version of this document.</p>
             </div>
      </div>
 </section>

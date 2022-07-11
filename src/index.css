@@ -134,6 +134,10 @@ button {
   background-color: var(--primary);
 }
 
+#contact-form button {
+  color: var(--dark);
+}
+
 button:hover {
   opacity: .8;
 }
@@ -218,6 +222,7 @@ textarea {
 
 #aboutme {
   float: left;
+  margin-top: -40px;
   margin-left: 5px;
  }
 
@@ -237,7 +242,7 @@ hr {
   margin-top:25px;
   margin-bottom: 25px;
   color: var(--primary);
-  border-top: 1px solid var(--primary);
+  border-top: 2px solid var(--primary);
 }
 
 .resume-top a:hover {
@@ -251,6 +256,10 @@ hr {
   text-align: left;
   color: var(--primary);
   border-bottom: 1px solid var(--primary);
+}
+
+.resume-info a {
+  color: var(--light);
 }
 
 .social-links {

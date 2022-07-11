@@ -3,8 +3,8 @@ import Navigation from "../Navigation";
 import "../../index.css";
 import self from "../../assets/for-header/LND2021.png"
 
-function Header() {
-    
+function Header(props) {
+    const { item } = props;
         
       return(
         <header className="flex-row nav-row">
@@ -15,7 +15,7 @@ function Header() {
             </h2>
             {/* Pass header props down to navigation component*/}
             <Navigation 
-               
+             item={item}  
             >   
             </Navigation>
         </header>
