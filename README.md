@@ -1,5 +1,4 @@
 
-
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 # Title
@@ -47,7 +46,7 @@ The main sections of the application are:
 
   ![Screen shot of the Resume component page](src/assets/screenshots/resume.png)  
 
-* Contact Form that may be used to contact the portfolio owner.  Below that is the Footer which includes links to the portfolio owner's LinkedIn account, GitHub account and facebook (Meta) account (although this portfolio owner does not use this account very often!).
+* Contact Form that may be used to contact the portfolio owner.  Below that is the Footer which includes links to the portfolio owner's LinkedIn account, GitHub account and facebook/Meta account (although this portfolio owner tries to avoid that last one when possible!).
   
   ![Screen shot of Contact and Footer components](src/assets/screenshots/contactme-footer.png)
 
@@ -78,6 +77,8 @@ My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 ## GitHub Repository
 
 My GitHub repository link for this project is [github.com/lnd4812/mod-20-react-portfolio](https://github.com/lnd4812/mod-20-react-portfolio)
+
+## GitHub Deployment URL
 
 Deployment URL for application is [lnd4812.github.io/mod-20-react-portfoio](https://lnd4812.github.io/mod-20-react-portfolio/).
 
