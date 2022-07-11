@@ -61,7 +61,7 @@ Please visit [Contributor Covenant website](https://contributor-covenant.org) fo
 
 ## Testing
 
-None at this time.
+None at this time, although the continuous rendering of React as changes are made to the code does enable the development to measure the impact of each change in the code.
 
 ## Credits
 
