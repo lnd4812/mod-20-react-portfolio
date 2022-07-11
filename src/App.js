@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import Aboutme from "./components/Aboutme";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/ContactForm";
 import Resume from "./components/Resume"
 import Footer from "./components/Footer";
-import DownloadLink from "react-download-link";
 import './App.css';
 
 function App() {
@@ -17,20 +16,11 @@ function App() {
       <main>
        
           <Aboutme></Aboutme>
-          
-           <Portfolio></Portfolio>
-           
-            <Resume>
-                      <DownloadLink
-                      label="Save"
-                      filename="myfile.txt"
-                      exportFile={() => "My cached Data"}/>
-                  </Resume>
+          <Portfolio></Portfolio>
+          <Resume></Resume>
+          <ContactForm></ContactForm>
             
-          
-             <ContactForm></ContactForm>
-            
-             </main>
+      </main>
       <Footer></Footer>
     </div>
   );
