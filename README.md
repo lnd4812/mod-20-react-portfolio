@@ -49,7 +49,7 @@ The main sections of the application are:
 
 * Contact Form that may be used to contact the portfolio owner.  Below that is the Footer which includes links to the portfolio owner's LinkedIn account, GitHub account and facebook (Meta) account (although this portfolio owner does not use this account very often!).
   
-  ![Screen shot of Contact and Footer components](src/assets/screenshots/contactme-footer.png).
+  ![Screen shot of Contact and Footer components](src/assets/screenshots/contactme-footer.png)
 
 ## License
 
