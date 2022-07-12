@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Navigation from "../Navigation";
 import "../../index.css";
 import self from "../../assets/for-header/LND2021.png"
 
 function Header(props) {
-    const { item } = props;
-        
+    const [display, setDisplay] = useState();
+
+    const handleClick=(props) =>
+    console.log(props);
+       
       return(
         <header className="flex-row nav-row">
             <h2>
@@ -15,7 +18,9 @@ function Header(props) {
             </h2>
             {/* Pass header props down to navigation component*/}
             <Navigation 
-             item={item}  
+             handleClick={handleClick}
+             setDisplay={setDisplay}
+             display={display}
             >   
             </Navigation>
         </header>
