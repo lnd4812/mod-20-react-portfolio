@@ -64,7 +64,7 @@ None at this time, although the continuous rendering of React as changes are mad
 
 ## Credits
 
-Assistance was provided in my weekly tutoring session and the usual visits to the Stack Overflow website [https://stackoverflow.com](https://stackoverflow.com).
+Assistance was provided in my weekly tutoring session, one of the Learning Assistants via AskBCS and the usual visits to the Stack Overflow website [https://stackoverflow.com](https://stackoverflow.com).
 
 ## Questions?
 
