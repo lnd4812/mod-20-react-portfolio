@@ -5,12 +5,9 @@ function Navigation(props) {
 
     const {
         pages=[],
-        currentPage,
         setCurrentPage
     }= props;
-    console.log(pages, currentPage, setCurrentPage)
-
-        
+            
     return(    
       <nav>
         <ul className="flex-row navlinks">

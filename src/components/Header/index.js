@@ -15,7 +15,6 @@ function Header() {
 
     const [currentPage, setCurrentPage] = useState(pages[0]);
 
-          
     return(
       <div>      
         <header className="flex-row nav-row">
