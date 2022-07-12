@@ -1,26 +1,30 @@
 import React from "react";
 import "../../index.css"
 
-function Navigation() {
-    
-    const handleClick = (item) => { 
-        return item;
-    }
-    
+function Navigation(props) {
+
+    const {
+        pages=[],
+        currentPage,
+        setCurrentPage
+    }= props;
+    console.log(pages, currentPage, setCurrentPage)
+
+        
     return(    
       <nav>
         <ul className="flex-row navlinks">
             <li className="mx-2">
-                <a href="#aboutme" onClick={() => handleClick('AboutMe')}>About Me</a>
+                <a href="#aboutme" onClick={() => setCurrentPage(pages[0])}>About Me</a>
             </li>
             <li className='mx-1'>
-                <a href="#portfolio" onClick={() => handleClick('Portfolio')}>Portfolio</a>
+                <a href="#portfolio" onClick={() => setCurrentPage(pages[1])}>Portfolio</a>
             </li>  
             <li className="mx-2">
-                <span onClick={() => handleClick('ContactForm')}><a href="#contact">Contact</a></span>
+                <span onClick={() => setCurrentPage(pages[2])}><a href="#contact">Contact</a></span>
             </li>
             <li className='mx-2'>
-                <a href="#resume" onClick={() => handleClick('Resume')}>Resume</a>
+                <a href="#resume" onClick={() => setCurrentPage(pages[3])}>Resume</a>
             </li>
         </ul>
       </nav>

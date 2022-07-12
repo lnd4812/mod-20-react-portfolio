@@ -1,13 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import Navigation from "../Navigation";
+import Page from "../Page";
 import "../../index.css";
 import self from "../../assets/for-header/LND2021.png"
 
 function Header() {
-    const handleClick=(props) => {
-    return props;
-    }    
-      return(
+
+    const[pages] = useState([
+        {name: 'aboutme'}, 
+        {name: 'portfolio'},
+        {name: 'contact'},
+        {name: 'resume'},
+    ]);
+
+    const [currentPage, setCurrentPage] = useState(pages[0]);
+
+          
+    return(
+      <div>      
         <header className="flex-row nav-row">
             <h2>
                 <a className="self" href="#aboutme">
@@ -15,10 +25,18 @@ function Header() {
                 </a>
             </h2>
             <Navigation 
-            handleClick={handleClick}
+                pages={pages}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
              >  
             </Navigation>
         </header>
+        <main>
+            <Page 
+                currentPage={currentPage}>
+            </Page>
+        </main>
+      </div>
     ) 
 }
 
