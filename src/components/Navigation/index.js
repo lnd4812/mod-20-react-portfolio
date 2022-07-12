@@ -1,7 +1,11 @@
 import React from "react";
 import "../../index.css"
 
-function Navigation({handleClick}) {
+function Navigation() {
+    
+    const handleClick = (item) => { 
+        return item;
+    }
     
     return(    
       <nav>

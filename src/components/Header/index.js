@@ -1,14 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import Navigation from "../Navigation";
 import "../../index.css";
 import self from "../../assets/for-header/LND2021.png"
 
-function Header(props) {
-    const [display, setDisplay] = useState();
-
-    const handleClick=(props) =>
-    console.log(props);
-       
+function Header() {
+    // const handleClick=(props) => {
+    //  return props;
+        
       return(
         <header className="flex-row nav-row">
             <h2>
@@ -16,15 +14,12 @@ function Header(props) {
                     <span role="img" aria-label="self"><img src={self} className="bio-pic" style={{ width: "5%" }} alt="bio-pic" /></span>Laurel David Portfolio
                 </a>
             </h2>
-            {/* Pass header props down to navigation component*/}
             <Navigation 
-             handleClick={handleClick}
-             setDisplay={setDisplay}
-             display={display}
-            >   
+            //  handleClick={handleClick}
+             >  
             </Navigation>
         </header>
-    )  
+    ) 
 }
 
 export default Header;
