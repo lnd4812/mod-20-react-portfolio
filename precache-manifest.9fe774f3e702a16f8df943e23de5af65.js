@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "89a1123e2ce86142c41b",
+    "revision": "57bbbd407437bbe1fd60",
     "url": "/mod-20-react-portfolio/static/css/main.8c8d1b54.chunk.css"
   },
   {
-    "revision": "89a1123e2ce86142c41b",
-    "url": "/mod-20-react-portfolio/static/js/main.89a1123e.chunk.js"
+    "revision": "57bbbd407437bbe1fd60",
+    "url": "/mod-20-react-portfolio/static/js/main.57bbbd40.chunk.js"
   },
   {
     "revision": "41211fcf000cf3a9973c",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/mod-20-react-portfolio/static/media/workday-scheduler.7ee74548.png"
   },
   {
-    "revision": "61169eff7453f19eee3975aaa8fcc01b",
+    "revision": "75b764b36f4d8ffb7109a76b4533996b",
     "url": "/mod-20-react-portfolio/index.html"
   }
 ];
