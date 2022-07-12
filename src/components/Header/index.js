@@ -4,9 +4,9 @@ import "../../index.css";
 import self from "../../assets/for-header/LND2021.png"
 
 function Header() {
-    // const handleClick=(props) => {
-    //  return props;
-        
+    const handleClick=(props) => {
+    return props;
+    }    
       return(
         <header className="flex-row nav-row">
             <h2>
@@ -15,7 +15,7 @@ function Header() {
                 </a>
             </h2>
             <Navigation 
-            //  handleClick={handleClick}
+            handleClick={handleClick}
              >  
             </Navigation>
         </header>
